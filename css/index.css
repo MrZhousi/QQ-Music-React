@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root,
+.container {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .header {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+.container .header a {
+  text-align: center;
+  height: 100%;
+  line-height: 50px;
+  width: 33%;
+  color: #ccc;
+  font-size: 22px;
+}
+.container .header a.active {
+  color: green;
+  border-bottom: 1px solid green;
+}
+.container .main {
+  flex: 1;
+  overflow: auto;
+  background-color: #f4f4f4;
+}
+.container .main .banner {
+  width: 100%;
+  height: 150px;
+}
+.container .main .banner .ant-carousel {
+  width: 100%;
+  height: 100%;
+}
+.container .main .banner img {
+  width: 100%;
+}
+.container .main .list {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.container .main .list .listItem {
+  background-color: #fff;
+}
+.container .main .list .listItem .imgbox {
+  width: 170px;
+  height: 170px;
+}
+.container .main .list .listItem .imgbox img {
+  width: 100%;
+}
+.container .main h1,
+.container .main h3 {
+  margin-left: 10px;
+}
+.container .main .rank {
+  padding: 0 10px;
+}
+.container .main .toplist {
+  background-color: #fff;
+  display: flex;
+  margin-bottom: 10px;
+  height: 120px;
+}
+.container .main .toplist .right {
+  line-height: 120px;
+  font-size: 20px ;
+  font-weight: bold;
+  color: #ccc;
+  margin-right: 3px;
+}
+.container .main .toplist .imgBox {
+  width: 120px;
+  height: 100%;
+}
+.container .main .toplist .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+.container .main .toplist .titlelist {
+  flex: 1;
+  overflow: hidden;
+}
+.container .main .toplist .titlelist .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 5px 5px;
+}
+.container .main .toplist .titlelist .sub-title {
+  width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 5px;
+}
+.container .main .toplist .titlelist .sub-title .songName {
+  font-size: 18px;
+  color: #000000;
+  padding: 0 6px;
+}
+.container .main .search {
+  padding: 10px;
+}
+.container .main .search .cancel {
+  margin-left: 20px;
+  font-size: 18px;
+  color: #000000;
+}
+.container .main .hot-search {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 10px 20px ;
+}
+.container .main .hot-search h2 {
+  color: #666666;
+}
+.container .main .hot-search .items {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main .hot-search .items span {
+  margin: 5px 10px;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  color: #000000;
+}
+.container .main .searchs {
+  width: 280px;
+  position: absolute;
+  top: 110px;
+  left: 10px;
+  background-color: #fff;
+}
+.container .main .searchs li {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+}
+.container .main .searchs li p {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.container .main .searchs li p .name {
+  width: 40%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container .main .searchs li p .singer {
+  width: 30%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container .main .searchs li .anticon-search {
+  margin-right: 5px;
+  line-height: 24px;
+}
+.lists {
+  width: 100%;
+  height: 100%;
+}
+.lists .titleInfo {
+  text-align: center;
+}
+.lists .titleInfo h2 {
+  margin-top: 10px;
+  color: #000000;
+}
+.lists .titleInfo .ant-btn {
+  width: 50%;
+  background: #22d59c;
+  color: #fff;
+  font-size: 24px;
+  border-radius: 20px;
+  border: none;
+}
+.lists .song-item .pullup {
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+}
+.lists .song-item .title {
+  font-size: 18px;
+  margin: 10px 10px;
+}
+.lists .song-item li {
+  padding: 0 10px;
+}
+.lists .song-item li .song-title {
+  display: flex;
+}
+.lists .song-item li .song-title .song-num {
+  width: 40px;
+  color: red;
+}
+.lists .song-item li .song-title .song-info {
+  flex: 1;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.lists .song-item li .song-title .song-info span {
+  color: #000000;
+  font-size: 18px;
+  width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.lists .song-item li .song-title .song-info svg {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.lists .song-item li .song-name {
+  width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-left: 40px;
+}
+.lists .song-item li .song-name span {
+  margin-right: 10px;
+}
+.lyric {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.lyric .songs {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.lyric .lyricItem {
+  height: 375px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 150px;
+}
+.lyric .lyricItem p {
+  color: #000000;
+}
+.lyric .lyricItem p.active {
+  color: #00ff88;
+}
+.lyric .audio {
+  height: 150px;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.lyric .audio .slider {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+.lyric .audio .slider .slide-block {
+  flex: 1;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+.lyric .audio .slider .slide-block .progress-box {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px 0 0 5px;
+  background-color: #00ff88;
+}
+.lyric .audio .slider .slide-block .progress-bar {
+  width: 16px;
+  height: 16px;
+  background-color: #00ff88;
+  border-radius: 8px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+}
+.lyric .audio .slider span {
+  width: 50px;
+  text-align: center;
+}
+.lyric .audio .btns {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  padding: 0 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.lyric .audio .btns span {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+.lyric .audio .btns span .active {
+  color: #00ff88;
+}
+.lyric .audio .btns span.little {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.lyric .audio .ant-btn {
+  width: 50%;
+  background-color: #00ff88;
+  border: none;
+}
